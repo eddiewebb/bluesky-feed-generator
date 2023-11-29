@@ -16,11 +16,14 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
       //console.log(post.record.text)
     //}
 
+    const keywords = ['cannabis', '#canna', 'adirondank', 'adirondackgreen']
+
     const postsToDelete = ops.posts.deletes.map((del) => del.uri)
     const postsToCreate = ops.posts.creates
       .filter((create) => {
         // only alf-related posts
-        return create.record.text.toLowerCase().includes('cannabis')
+        let lowered = create.record.text.toLowerCase();
+        return keywords.some(element => lowered.includes(element));
       })
       .map((create) => {
         // map alf-related posts to a db row
