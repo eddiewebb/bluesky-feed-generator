@@ -16,7 +16,7 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
       //console.log(post.record.text)
     //}
 
-    const keywords = ['cannabis', '#canna', 'adirondank', 'adirondackgreen']
+    const keywords = ['cannabis', '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent']
 
     const postsToDelete = ops.posts.deletes.map((del) => del.uri)
     const postsToCreate = ops.posts.creates
