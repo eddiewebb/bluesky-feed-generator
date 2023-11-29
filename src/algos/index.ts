@@ -3,7 +3,7 @@ import {
   QueryParams,
   OutputSchema as AlgoOutput,
 } from '../lexicon/types/app/bsky/feed/getFeedSkeleton'
-import * as whatsAlf from './greenlist'
+import * as whatsAlf from './cannalist'
 
 type AlgoHandler = (ctx: AppContext, params: QueryParams) => Promise<AlgoOutput>
 

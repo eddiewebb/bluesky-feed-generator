@@ -27,6 +27,7 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
       })
       .map((create) => {
         // map alf-related posts to a db row
+        //console.log("Match")
         return {
           uri: create.uri,
           cid: create.cid,
