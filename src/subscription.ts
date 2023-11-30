@@ -16,13 +16,14 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
     //  console.log(post)
     //}
 
-    const keywords = ['cannabis', '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent','sea of green','scrog',"THC","terpenes"]
+    const keywords = [ '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent','sea of green',"THC","terpenes"]
     const authors = new Map([
       ['did:plc:7zhjxd3sicg5nrd37mbq4bii', 'Wayne Growz'],
       ["did:plc:bpiga2nftqctnl7jaqyopud4", "cannabislover"],
       ["did:plc:sz3idvfudj7pb3bonh72yp3t", "Ceri Culitvates"],
       ["did:plc:467quzrmpl44zbnfmjdvup7s", "Heretic"],
-      ["did:plc:unocmavm6j6xjaj24fblquu7", "Sunset cannafarm"]
+      ["did:plc:unocmavm6j6xjaj24fblquu7", "Sunset cannafarm"],
+      ["did:plc:znvvpl2hq7iift6w2fn3mbws", "Sweetgrass Cannabis"]
     ])
 
 
@@ -32,10 +33,12 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
         // only alf-related posts
         let lowered = create.record.text.toLowerCase();
         return keywords.some(element => lowered.includes(element)) || authors.has(create.author)
+
+        //record.embed: { '$type': 'app.bsky.embed.images', images: [Array] },
       })
       .map((create) => {
         // map alf-related posts to a db row
-        //console.log("Match")
+        //console.log(create)
         return {
           uri: create.uri,
           cid: create.cid,

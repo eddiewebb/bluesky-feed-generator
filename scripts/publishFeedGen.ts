@@ -12,7 +12,7 @@ const run = async () => {
 
   // YOUR bluesky password, or preferably an App Password (found in your client settings)
   // Ex: abcd-1234-efgh-5678
-  const password = ''
+  const password = '7anw-52a3-trin-7x3t'
 
   // A short name for the record that will show in urls
   // Lowercase with no spaces.
@@ -21,11 +21,11 @@ const run = async () => {
 
   // A display name for your feed
   // Ex: What's Hot
-  const displayName = 'Canna List'
+  const displayName = 'Weed Feed 🌱'
 
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
-  const description = 'Collection of growers professionals and hobbiest sharing photos of Cannabis plants and products.'
+  const description = 'The @ Protocol\'s Weed Feed! Curated algorithm follows key users and keywords in the #CannabisCommunity for a ideal blend of growers both professionals and hobbiest sharing photos of Cannabis plants and products.'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
