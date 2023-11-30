@@ -32,7 +32,7 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
       .filter((create) => {
         // only alf-related posts
         let lowered = create.record.text.toLowerCase();
-        return keywords.some(element => lowered.includes(element)) || authors.has(create.author)
+        return authors.has(create.author) || keywords.some(element => lowered.includes(element)) 
 
         //record.embed: { '$type': 'app.bsky.embed.images', images: [Array] },
       })
