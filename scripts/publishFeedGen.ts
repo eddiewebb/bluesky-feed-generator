@@ -8,11 +8,11 @@ const run = async () => {
 
   // YOUR bluesky handle
   // Ex: user.bsky.social
-  const handle = 'AdirondackGreen.bsky.social'
+  const handle = 'adirondack.green'
 
   // YOUR bluesky password, or preferably an App Password (found in your client settings)
   // Ex: abcd-1234-efgh-5678
-  const password = '7anw-52a3-trin-7x3t'
+  const password = ''
 
   // A short name for the record that will show in urls
   // Lowercase with no spaces.

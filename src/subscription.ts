@@ -16,7 +16,7 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
     //  console.log(post)
     //}
 
-    const keywords = [ '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent','sea of green',"THC","terpenes","growmies"]
+    const keywords = [ '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent','sea of green',"THC","terpenes","growmies","autoflower"]
     const authors = new Map([
       ['did:plc:7zhjxd3sicg5nrd37mbq4bii', 'Wayne Growz'],
       ["did:plc:bpiga2nftqctnl7jaqyopud4", "cannabislover"],
