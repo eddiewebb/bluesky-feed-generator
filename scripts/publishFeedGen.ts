@@ -25,7 +25,7 @@ const run = async () => {
 
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
-  const description = 'The @ Protocol\'s Weed Feed! Curated algorithm follows key users and keywords in the #CannabisCommunity for a ideal blend of growers both professionals and hobbiest sharing photos of Cannabis plants and products.'
+  const description = 'The @ Protocol\'s Weed Feed! Curated algorithm follows key users and keywords in the #CannabisCommunity.  You can also add #weedfeed to your own posts to add them here!'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg

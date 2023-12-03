@@ -16,14 +16,20 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
     //  console.log(post)
     //}
 
-    const keywords = [ '#canna', 'adirondank', 'adirondackgreen','mmemberville','grow tent','sea of green',"THC","terpenes","growmies","autoflower"]
+    const keywords = [ '#canna', 'adirondank', 'adirondackgreen','mmemberville',
+      'grow tent','sea of green',"THC","terpenes","growmies","autoflower","#weedfeed","indoor grow"]
     const authors = new Map([
       ['did:plc:7zhjxd3sicg5nrd37mbq4bii', 'Wayne Growz'],
       ["did:plc:bpiga2nftqctnl7jaqyopud4", "cannabislover"],
       ["did:plc:sz3idvfudj7pb3bonh72yp3t", "Ceri Culitvates"],
       ["did:plc:467quzrmpl44zbnfmjdvup7s", "Heretic"],
       ["did:plc:unocmavm6j6xjaj24fblquu7", "Sunset cannafarm"],
-      ["did:plc:znvvpl2hq7iift6w2fn3mbws", "Sweetgrass Cannabis"]
+      ["did:plc:znvvpl2hq7iift6w2fn3mbws", "Sweetgrass Cannabis"],
+      ["did:plc:bd65k36gc35tukpk7vli7qez", "Breeder Steve"],
+      ["did:plc:rls3kykgpddybnfrpxev6yiz", "apocalyptique420.bsky.social"],
+      ["did:plc:wdaqisb2biywo4gsabzohgng", "mediamaster.bsky.social"],
+      ["did:plc:r5mqpufe2emxw3rgvsdhptao", "cameraman2014.bsky.social"],
+      ["did:plc:toxgpgrnjl4d4avtddr6padj", "pushinpetunias.bsky.social"]
     ])
 
 
