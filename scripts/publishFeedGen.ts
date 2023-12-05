@@ -25,7 +25,7 @@ const run = async () => {
 
   // (Optional) A description of your feed
   // Ex: Top trending content from the whole network
-  const description = 'The @ Protocol\'s Weed Feed! Curated algorithm follows key users and keywords in the #CannabisCommunity.  You can also add #weedfeed to your own posts to add them here!'
+  const description = 'The @ Protocol\'s Weed Feed! Age 21+. Curated algorithm follows key users and keywords in the #CannabisCommunity.  You can also add #weedfeed to your own posts to add them here!  Please mark photos sensitive as appropriate.  Users posting pornography will be removed'
 
   // (Optional) The path to an image to be used as your feed's avatar
   // Ex: ~/path/to/avatar.jpeg
