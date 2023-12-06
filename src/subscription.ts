@@ -59,7 +59,7 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
         .deleteFrom('post')
         .where('uri', 'in', postsToDelete)
         .execute()
-        console.log("Deleted %d posts", postsToDelete.length)
+        //console.log("Deleted %d posts", postsToDelete.length)
     }
     if (postsToCreate.length > 0) {
       await this.db
