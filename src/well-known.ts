@@ -11,7 +11,8 @@ const makeRouter = (ctx: AppContext) => {
 
 
   router.get('/.well-known/atproto-did', (req, res) => {
-    const handle = req.headers['X-atproto-handle'];
+    //console.log(req.headers)
+    const handle = req.headers['x-atproto-handle'];
     console.log(handle);
     if (typeof handle === "undefined") {
       res.status(404).send()
