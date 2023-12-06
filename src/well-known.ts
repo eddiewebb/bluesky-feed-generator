@@ -12,14 +12,15 @@ const makeRouter = (ctx: AppContext) => {
 
   router.get('/.well-known/atproto-did', (req, res) => {
     //console.log(req.headers)
-    const handle = req.headers['x-atproto-handle'];
-    console.log(handle);
+    const handle =  req.get('x-atproto-handle');
+    console.log(`Handle validation request for ${handle}`);
     if (typeof handle === "undefined") {
+      console.log('not found')
       res.status(404).send()
       return
     }
 
-    const did = handles.get(handle[0]);
+    const did = handles.get(handle);
     res.type('text/plain').send('did');
   })
 
