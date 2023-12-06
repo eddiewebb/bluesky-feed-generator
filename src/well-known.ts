@@ -14,14 +14,14 @@ const makeRouter = (ctx: AppContext) => {
     //console.log(req.headers)
     const handle =  req.get('x-atproto-handle');
     console.log(`Handle validation request for ${handle}`);
-    if (typeof handle === "undefined") {
+    if (typeof handle === "undefined" || ! handles.has(handle) ) {
       console.log('not found')
       res.status(404).send()
       return
     }
 
     const did = handles.get(handle);
-    res.type('text/plain').send('did');
+    res.type('text/plain').send(did);
   })
 
 
