@@ -29,7 +29,8 @@ export class FirehoseSubscription extends FirehoseSubscriptionBase {
       ["did:plc:rls3kykgpddybnfrpxev6yiz", "apocalyptique420.bsky.social"],
       ["did:plc:wdaqisb2biywo4gsabzohgng", "mediamaster.bsky.social"],
       ["did:plc:r5mqpufe2emxw3rgvsdhptao", "cameraman2014.bsky.social"],
-      ["did:plc:toxgpgrnjl4d4avtddr6padj", "pushinpetunias.bsky.social"]
+      ["did:plc:toxgpgrnjl4d4avtddr6padj", "pushinpetunias.bsky.social"],
+      ["did:plc:pytnwg4qevpov5sgqb6vhvh5", "tentbot.grows.green"]
     ])
 
 
